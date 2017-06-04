@@ -6,9 +6,64 @@
 html, body {
   overflow-x: hidden;
   font-size: 16px;
+  height: 200vh;
 }
 
 header {
   position: relative;
   background-color: #282f44;
+  text-align: center;
+}
+header .icon {
+  width: 80%;
+  max-width: 250px;
+  padding: 250px 0px;
+}
+header .marginbottom {
+  position: absolute;
+  width: 95%;
+  bottom: 0px;
+  right: -20px;
+  animation: upin 2s both;
+}
+@keyframes upin {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+header .explore {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5d061;
+  font-size: 16px;
+  top: 85%;
+  opacity: 0;
+  transition: 0.5s;
+}
+header .explore:after {
+  display: block;
+  content: "v";
+  transform: scaleX(1.2) scaleY(0.5);
+}
+header .explore.at_top {
+  opacity: 1;
+}
+
+nav.navbar {
+  transition: 0.5s;
+}
+nav.navbar a {
+  transition: 0.5s;
+}
+
+nav.navbar.at_top {
+  background-color: transparent;
+}
+nav.navbar.at_top a, nav.navbar.at_top a:visited {
+  color: #ececec;
 }
