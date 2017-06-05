@@ -67,3 +67,59 @@ nav.navbar.at_top {
 nav.navbar.at_top a, nav.navbar.at_top a:visited {
   color: #ececec;
 }
+
+section#section_about {
+  background-color: #e6af2e;
+}
+section#section_about .container {
+  transform: rotate(15deg) scale(0.9);
+}
+section#section_about .row {
+  height: 150px;
+  color: black;
+}
+section#section_about .row .r1text {
+  font-size: 80px;
+}
+section#section_about .row .r2text {
+  font-size: 35px;
+}
+section#section_about .row .r3text {
+  font-size: 30px;
+}
+section#section_about .row .r4text {
+  font-size: 50px;
+  text-align: right;
+}
+section#section_about .btn-area {
+  height: 150px;
+}
+section#section_about a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(15deg);
+}
+section#section_about .tri {
+  transform: rotate(-15deg);
+}
+section#section_about .tri1 {
+  width: 350px;
+}
+section#section_about .tri2 {
+  width: 20px;
+  margin-left: 20px;
+}
+section#section_about .tri3 {
+  width: 150px;
+  margin-left: 70%;
+}
+section#section_about .tri4 {
+  width: 70px;
+  margin-left: 100%;
+}
+section#section_about .tri5 {
+  width: 80px;
+  margin-left: 100%;
+}

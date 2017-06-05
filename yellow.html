@@ -17,26 +17,58 @@
 <body>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <nav class="navbar navbar-default navbar-fixed-top at_top">
-    <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#header_index">Yellow Studio</a>
-      </div>
-      <div class="navbar-collapse collapse" id="navbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#section_about">About</a></li>
-          <li class="active"><a href="#section_works">Works</a></li>
-          <li><a href="#section_contact">Contact</a></li>
-        </ul>
-      </div>
-      <!-- /.nav-collapse-->
+
+<nav class="navbar navbar-default navbar-fixed-top at_top">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#header_index">Yellow Studio</a>
     </div>
-  </nav>
-  <header id="header_index">
-    <div class="container"><img class="icon" src="https://awiclass.monoame.com/img/webpic/w_icon.svg" alt=""/><img class="marginbottom mountain" src="https://awiclass.monoame.com/img/margin/m_index.svg" alt=""/>
-      <div class="explore at-top">EXPLORE</div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#section_about">About</a></li>
+        <li><a href="#section_works">Works</a></li>
+        <li><a href="#section_contact">Contact</a></li>
+      </ul>
     </div>
-  </header>
+    <!-- /.nav-collapse-->
+  </div>
+</nav>
+<header id="header_index">
+  <div class="container"><img class="icon" src="https://awiclass.monoame.com/img/webpic/w_icon.svg" alt=""/><img class="marginbottom mountain" src="https://awiclass.monoame.com/img/margin/m_index.svg" alt=""/>
+    <div class="explore at-top">EXPLORE</div>
+  </div>
+</header>
+<section id="section_about">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-4"><img class="tri tri1" src="https://awiclass.monoame.com/img/webpic/w_tri1.svg" alt=""/>
+        <h2 class="r1text">WORKS IN YELLOW</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4"><img class="tri tri2" src="https://awiclass.monoame.com/img/webpic/w_tri2.svg" alt=""/></div>
+      <div class="col-sm-8"><img class="tri tri3" src="https://awiclass.monoame.com/img/webpic/w_tri3.svg" alt=""/>
+        <h2 class="r2text">YELLOW STUDIO-Website Design/Development</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-8">
+        <h4 class="r3text">Interactive Art Design</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <h2 class="r4text">20 MORE SUCCESS CASES</h2>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 btn_area"><a class="btn btn-default" href="#section_works">MORE STORY</a><img class="tri tri4" src="https://awiclass.monoame.com/img/webpic/w_tri4.svg" alt=""/></div>
+      <div class="col-sm-4"><img class="tri tri5" src="https://awiclass.monoame.com/img/webpic/w_tri5.svg" alt=""/></div>
+    </div>
+  </div>
+</section>
 
   <script>
         $(window).scroll(function(e){
@@ -45,6 +77,15 @@
             else
                 $(".explore,.navbar").removeClass("at_top");
         });
+
+        $(document).on('click','a',function(event){
+           event.preventDefault();
+           var target = $(this).attr("href");
+           $('html,body').animate({
+              scrollTop: $(target).offset().top
+           },500);
+
+});
   </script>
 
 
