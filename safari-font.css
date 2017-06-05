@@ -1,8 +1,0 @@
-body {
-	zoom: 100%;
-}  /* 讓Safari預設頁面顯示放大150% */
-
-@font-face {
-	font-family: serif;
-	src: local("LiHei Pro");
-} /* 讓Safari預設字體改回隸黑Pro */
